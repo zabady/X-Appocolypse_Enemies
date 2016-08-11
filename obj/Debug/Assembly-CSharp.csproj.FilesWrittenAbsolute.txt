@@ -1,0 +1,17 @@
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/UnityEngine.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/UnityEditor.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/Mono.Cecil.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/Unity.DataContract.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/obj/Debug/Assembly-CSharp.dll
+/Users/ahmedatif/Unity Dev/X-Appocolypse_Enemies/obj/Debug/Assembly-CSharp.dll.mdb

@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{FA64141F-5198-7C62-65A5-8FFEEF1C7E8E}") = "X-Appocolypse_Enemies", "Assembly-CSharp-firstpass.csproj", "{A1AE7A44-BF39-1AFE-C95B-C16DA9DFA393}"
+EndProject
+Project("{FA64141F-5198-7C62-65A5-8FFEEF1C7E8E}") = "X-Appocolypse_Enemies", "Assembly-CSharp.csproj", "{876A1DD8-5CAF-5402-FF42-0B133CD12D92}"
+EndProject
+Project("{FA64141F-5198-7C62-65A5-8FFEEF1C7E8E}") = "X-Appocolypse_Enemies", "Assembly-CSharp-Editor.csproj", "{5A9C633F-6B5C-AE4F-21A1-32BAFA5D1324}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1AE7A44-BF39-1AFE-C95B-C16DA9DFA393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1AE7A44-BF39-1AFE-C95B-C16DA9DFA393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1AE7A44-BF39-1AFE-C95B-C16DA9DFA393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1AE7A44-BF39-1AFE-C95B-C16DA9DFA393}.Release|Any CPU.Build.0 = Release|Any CPU
+		{876A1DD8-5CAF-5402-FF42-0B133CD12D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{876A1DD8-5CAF-5402-FF42-0B133CD12D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{876A1DD8-5CAF-5402-FF42-0B133CD12D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{876A1DD8-5CAF-5402-FF42-0B133CD12D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A9C633F-6B5C-AE4F-21A1-32BAFA5D1324}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A9C633F-6B5C-AE4F-21A1-32BAFA5D1324}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A9C633F-6B5C-AE4F-21A1-32BAFA5D1324}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A9C633F-6B5C-AE4F-21A1-32BAFA5D1324}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
