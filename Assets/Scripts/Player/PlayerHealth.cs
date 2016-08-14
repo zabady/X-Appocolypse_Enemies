@@ -32,7 +32,6 @@ public class PlayerHealth : MonoBehaviour {
 	
 	void Update ()
     {
-        // if (damaged) { }
     }
 
     public void TakeDamage(int amount)
@@ -48,7 +47,6 @@ public class PlayerHealth : MonoBehaviour {
         {
             Death();
         }
-
     }
 
     void Death()

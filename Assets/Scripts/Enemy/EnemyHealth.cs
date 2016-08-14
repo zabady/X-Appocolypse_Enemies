@@ -51,7 +51,7 @@ public class EnemyHealth : MonoBehaviour {
 			Death ();
 		} else {
 			anim.SetTrigger ("GotHit");
-			EnemyMovement.canMove = false;
+			this.GetComponent<EnemyMovement> ().canMove = false;
 		}
 	}
 
@@ -75,11 +75,5 @@ public class EnemyHealth : MonoBehaviour {
 		isSinking = true;
 		// ScoreManager.score += scoreValue;
 		Destroy(gameObject, 2);
-	}
-
-	// This function is being called by the TAKEHIT animation
-	public void MoveAgainAfterAnimation()
-	{
-		EnemyMovement.canMove = true;
 	}
 }

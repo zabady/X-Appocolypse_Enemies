@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: e7d61af6e7e2446678ca65e980d131dc
-timeCreated: 1471111031
+guid: 02c2d6a248ef64ee7b4027c4fbdc8d5e
+timeCreated: 1471111028
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -187,7 +187,7 @@ ModelImporter:
     400176: Zombie:TongueBack
     400178: Zombie:TongueTip
     400180: //RootNode
-    7400000: zombie_dying
+    7400000: jumpingUp
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -211,10 +211,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: zombie_dying
+      name: jumpingUp
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 200
+      lastFrame: 81
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -234,8 +234,8 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.8783247
-        functionName: StartSinking
+      - time: 0.5902439
+        functionName: StopNavMeshMoving
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
@@ -450,7 +450,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
   importAnimation: 1
-  copyAvatar: 0
+  copyAvatar: 1
   humanDescription:
     human: []
     skeleton: []
@@ -461,7 +461,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: Zombie:Hips
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: fb58deda8eae14ed19aec809b21236c7,
     type: 3}

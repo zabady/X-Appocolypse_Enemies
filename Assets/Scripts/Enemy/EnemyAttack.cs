@@ -51,6 +51,7 @@ public class EnemyAttack : MonoBehaviour {
             playerJustDied = true;
             navMesh.Stop();
             anim.SetTrigger("PlayerDead");
+			EnemyMovement.playerDead = true;
         }
 	}
 

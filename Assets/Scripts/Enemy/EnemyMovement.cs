@@ -3,7 +3,8 @@ using System.Collections;
 
 public class EnemyMovement : MonoBehaviour {
 
-	public static bool canMove = true;
+	public bool canMove = true;
+	public static bool playerDead = false;
 
 	Transform playerTransform;
 	NavMeshAgent nav;
@@ -18,37 +19,46 @@ public class EnemyMovement : MonoBehaviour {
 	}
 
 	void Update () {
-		if (canMove) {
+		if (canMove)
+		{
 			nav.SetDestination (playerTransform.position);
 			nav.Resume ();
 			transform.LookAt (new Vector3 (playerTransform.position.x, 0, playerTransform.position.z));
-		} else if (enemyHealth.currentHealth > 0) {
+		}
+		else if (enemyHealth.currentHealth > 0)
+		{
 			nav.Stop ();
 		}
 
-		// Will only execute once, when the zomvie dies
-		if (enemyHealth.currentHealth == 0 && canMove) {
+		// Will only execute once, when the zombie dies or when the player dies
+		if (enemyHealth.currentHealth <= 0 && canMove || playerDead) {
 			canMove = false;
 			nav.Stop ();
 		}
 	}
 
+	// Coillider Trigger
 	void OnTriggerEnter (Collider otherGameObject)
 	{
 		if (otherGameObject.tag == "Barrier")
 		{
-			canMove = false;
 			anim.SetBool ("Barrier", true);
 		}
 	}
 
-//	void OnTriggerExit(Collider otherGameObject)
-//	{
-//		if (otherGameObject.tag == "Player")
-//		{
-//			anim.SetBool ("PlayerInRange", false);
-//		}
-//	}
+	// This function is being called by the JUMPUP animation
+	public void StopNavMeshMoving()
+	{
+		GetComponent<Rigidbody> ().isKinematic = true;
+		canMove = false;
+	}
 
-	// Jumping is the latest issue in shaa allah
+	// This function is being called by the TAKEHIT and JUMPDOWN animations
+	public void MoveAgainAfterAnimation()
+	{
+		this.canMove = true;
+		if (GetComponent<Rigidbody> ().isKinematic) {
+			GetComponent<Rigidbody> ().isKinematic = false;
+		}
+	}
 }
