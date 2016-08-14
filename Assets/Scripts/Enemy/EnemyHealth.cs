@@ -25,8 +25,7 @@ public class EnemyHealth : MonoBehaviour {
 		capsuleCollider = GetComponent<CapsuleCollider> ();
 		currentHealth = startingHealth;
 	}
-	
-	// Update is called once per frame
+
 	void Update ()
 	{
 		if (isSinking)
@@ -41,6 +40,7 @@ public class EnemyHealth : MonoBehaviour {
 			return;
 		}
 
+
 		enemyAudio.Play ();
 		currentHealth -= amount;
 
@@ -49,6 +49,9 @@ public class EnemyHealth : MonoBehaviour {
 
 		if (currentHealth <= 0) {
 			Death ();
+		} else {
+			anim.SetTrigger ("GotHit");
+			EnemyMovement.canMove = false;
 		}
 	}
 
@@ -64,13 +67,19 @@ public class EnemyHealth : MonoBehaviour {
 		enemyAudio.Play ();
 	}
 
+	// This function is being called by the DEATH animation
 	public void StartSinking()
 	{
-		Debug.Log ("START SINKING MOTHER FUCKER!");
 		GetComponent<NavMeshAgent> ().enabled = false;
 		GetComponent<Rigidbody> ().isKinematic = true;
 		isSinking = true;
 		// ScoreManager.score += scoreValue;
 		Destroy(gameObject, 2);
+	}
+
+	// This function is being called by the TAKEHIT animation
+	public void MoveAgainAfterAnimation()
+	{
+		EnemyMovement.canMove = true;
 	}
 }

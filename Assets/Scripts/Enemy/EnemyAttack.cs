@@ -32,7 +32,6 @@ public class EnemyAttack : MonoBehaviour {
 		{
 			anim.SetBool ("PlayerInRange", true);
             playerInRange = true;
-
         }
 	}
 
@@ -47,14 +46,6 @@ public class EnemyAttack : MonoBehaviour {
 
 	void Update ()
     {
-        timer += Time.deltaTime;
-
-        if(timer >= timeBetweenAttacks && playerInRange && enemyHealth.currentHealth > 0)
-        {
-            Attack();
-        }
-
-
         if(playerHealth.currentHealth <= 0 && !playerJustDied)
         {
             playerJustDied = true;
@@ -63,10 +54,9 @@ public class EnemyAttack : MonoBehaviour {
         }
 	}
 
-    private void Attack()
+	// This function get called by the ATTACK animation
+    public void AttackPlayer()
     {
-        timer = 0;
-
         if (playerHealth.currentHealth > 0)
         {
             playerHealth.TakeDamage(attackDamage);
